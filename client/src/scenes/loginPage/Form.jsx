@@ -249,7 +249,7 @@ const Form = () => {
                             sx={{
                                 textDecoration: "underline",
                                 color: palette.primary.main,
-                                "&hover": {
+                                "&:hover": {
                                     cursor: "pointer",
                                     color: palette.primary.light,
                                 },
