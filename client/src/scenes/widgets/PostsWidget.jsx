@@ -14,7 +14,6 @@ const PostsWidget = ({ userId, isProfile = false }) => {
       headers: { Authorization: `Bearer ${token}` },
     });
     let data = await response.json();
-    // Assuming 'createdAt' is your timestamp field and it's in a format that can be compared
     data = data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
     dispatch(setPosts({ posts: data }));
   };
