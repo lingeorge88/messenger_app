@@ -8,5 +8,8 @@
       "build": "cd client && npm install && npm run build && cd ../server && npm install",
       "heroku-postbuild": "npm run build"
     },
+    "engines": {
+        "node": ">=14.x"
+      },
     "license": "MIT"
   }
